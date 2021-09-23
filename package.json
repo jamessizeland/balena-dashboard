@@ -1,0 +1,73 @@
+{
+  "name": "cna-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "prettier": "prettier --config .prettierrc.js \"./**/*.+(js|json|jsx|ts|tsx)\" --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.+(ts|tsx|js|jsx|json)": [
+      "eslint --fix",
+      "git add --all"
+    ],
+    "./**/*.+(ts|json|tsx)": [
+      "prettier --write",
+      "git add --all"
+    ]
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "autoprefixer": "^10.3.4",
+    "classnames": "^2.3.1",
+    "formik": "^2.2.9",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.0",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "sharp": "^0.29.1",
+    "tailwindcss": "^2.2.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@types/classnames": "^2.3.1",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.21",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.7",
+    "@types/redux-logger": "^3.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^13.0.0",
+    "eslint-config-next": "^11.1.2",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^10.0.3",
+    "postcss": "^8.3.6",
+    "postcss-100vh-fix": "^1.0.2",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-hover-media-feature": "^1.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.38.0",
+    "typescript": "^4.4.3"
+  }
+}
