@@ -1,6 +1,7 @@
 # base-image for node on any machine using a template variable,
 # see more about dockerfile templates here: https://www.balena.io/docs/learn/develop/dockerfile/#dockerfile-templates
 # and about balena base images here: https://www.balena.io/docs/reference/base-images/base-images/
+# https://hub.docker.com/r/balenalib/raspberrypi4-64-node/tags?page=1&ordering=last_updated
 FROM balenalib/%%BALENA_MACHINE_NAME%%-node:14-bullseye
 
 # use `install_packages` if you need to install dependencies,
