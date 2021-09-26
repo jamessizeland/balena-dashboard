@@ -2,7 +2,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: ['./src/components/**/*.tsx', './src/pages/**/*.tsx'],
+  purge: ['./src/**/*.tsx', './src/**/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -20,7 +20,7 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
       blue: colors.sky,
-      primary: '#9b59b6',
+      primary: '#3495eb',
       secondary: '#1abc9c',
     },
   },
