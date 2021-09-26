@@ -19,8 +19,6 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb-typescript',
     'airbnb/hooks',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier/@typescript-eslint', // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
     'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
@@ -38,6 +36,7 @@ module.exports = {
   rules: {
     // 'arrow-body-style': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
     'react/prop-types': 'off',
     // 'no-unused-vars': 'warn',
     // 'react/jsx-one-expression-per-line': 'off',
